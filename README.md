@@ -8,6 +8,7 @@ The system collects soil nutrient data (N, P, K), environmental parameters (pH, 
 
 ## 🎯 Key Results
 | Metrics | Result |
+| :---: | :---: |
 | Model Accuracy | 95% |
 | Error Rate | 4,7% |
 | Average Computing Time | 2,1 Seconds |
