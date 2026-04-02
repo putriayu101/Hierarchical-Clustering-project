@@ -31,7 +31,7 @@ The design of the model to be created follows the workflow shown below.
 ### Schematic 7-in-1 Sensor with Raspberry Pi
 <div align = "center"> <img width="488" height="300" alt="image" src="https://github.com/user-attachments/assets/6f7ac39c-0c23-4eb8-b3c3-cdf7be11f2ae" /> </div> <br>
 
-| Raspberry Pi Zero 2 W | Arduino Nano | RS-485 | Sensor Soil 7in1 |
+| Raspberry Pi | Arduino Nano | RS-485 | 7in1 Sensor |
 | :---: | :---: | :---: | :---: |
 | **USB Raspberry Pi** | 5V | - | Kabel Coklat |
 | **USB Raspberry Pi** | GND | - | Kabel Hitam |
@@ -43,3 +43,29 @@ The design of the model to be created follows the workflow shown below.
 | **USB Raspberry Pi** | D4 | RE | - |
 | **USB Raspberry Pi** | D5 | R0 | - |
 | **USB Raspberry Pi** | D2 | DI | - |
+
+### Schematic GPS Sensor with Raspberry Pi
+<div align = "center">
+  <img width="482" height="266" alt="image" src="https://github.com/user-attachments/assets/0d6c32f8-6cd4-4e2a-94b9-c398ade75486" /> </div> <br>
+  
+| Raspberry Pi | USB to TTL | GPS | 
+| :---: | :---: | :---: |
+| **USB Raspberry Pi** | GND | GND | 
+| **USB Raspberry Pi** | 5V | VCC | 
+| **USB Raspberry Pi** | RX | TX |
+| **USB Raspberry Pi** | TX | RX | 
+
+### Schematic TFT LCD Sensor with Raspberry Pi
+<div align = "center"><img width="488" height="195" alt="image" src="https://github.com/user-attachments/assets/a82deba0-b456-40a1-827f-945e885f1fca" />
+</div> <br>
+| Raspberry Pi | USB to TTL |
+| :---: | :---: | 
+| VCC | 3.3V | 
+| GND | GND |
+| CS | GPIO8 | 
+| RST | GPIO23 | 
+| DC | GPIO18 | 
+| SDI(MOSI) | GPIO10 |
+| SCK | GPIO11 | 
+| LED | 5V | 
+| SDO(MISO) | GPIO9 | 
