@@ -36,27 +36,17 @@ The system collects soil nutrient data (N, P, K) and environmental parameters (p
 
 ### Block Diagram
 
-<div align="center">
-
 <img width="470" height="296" alt="Block Diagram" src="https://github.com/user-attachments/assets/3eae90e2-867d-4ada-8c64-6ef455b4ec4c" />
 
-</div>
 
 ### System Workflow / Flowchart
 
-<div align="center">
-
 <img width="630" height="400" alt="System Flowchart" src="https://github.com/user-attachments/assets/f7f14a7a-2a74-4117-a992-359f197ae903" />
-
-</div>
 
 ### AHC Model Design
 
-<div align="center">
-
 <img width="456" height="121" alt="AHC Model Design" src="https://github.com/user-attachments/assets/a3789b31-bd7e-42b8-89ae-1a51d0e3d0d1" />
 
-</div>
 
 ---
 
