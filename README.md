@@ -118,9 +118,9 @@ The design of the model to be created follows the workflow shown below.
      |4|316|43|735|
      |5|801|14|267|
 
-    <br> From the results, it can be concluded that the *Cosine* matrix exhibits a more balanced data distribution compared to the Manhattan and Euclidean matrices.
+    From the results, it can be concluded that the *Cosine* matrix exhibits a more balanced data distribution compared to the Manhattan and Euclidean matrices.
 
-  5. **Dendogram**
+  5. **Dendogram** <br>
      <img width="440" height="224" alt="image" src="https://github.com/user-attachments/assets/c08fa96b-2b28-443f-b284-b86f3e4fc2d4" /> <br>
     The dendrogram in the figure was generated using average linkage and a cosine matrix.
 
@@ -144,10 +144,13 @@ The design of the model to be created follows the workflow shown below.
   - Connectivity      : Wi-Fi (Raspberri Pi)
 
 ## Result 
-  1. **Wi-Fi Connection**
+  1. **Wi-Fi Connection** <br>
      Digunakan internet HP dengan kekuatan sebesar 2.4 GHz untuk menghubungkan alat dengan internet.Pada pengukuran, semakin kecil nilai (negatif) misalnya mendekati -50 dBm, kekuatan sinyal semakin baik. Dan sebaliknya, apabila nilai (negatif) makin besar misal mendekati -100 dBm, artinya kekuatan sinyal semakin buruk. <br>
-     <img width="356" height="171" alt="image" src="https://github.com/user-attachments/assets/98a2fbbe-22f9-4bad-8d7b-ee116d10c83b" /> <br>
+     <img width="456" height="271" alt="image" src="https://github.com/user-attachments/assets/98a2fbbe-22f9-4bad-8d7b-ee116d10c83b" /> <br>
      Dari hasil pengukuran, dapat disimpulkan bahwa kekuatan sinyal dari hospot HP memiliki jangkauan efektif sekitar 50m, dan jangkauan maksimal di 70m. Oleh karena itu, jarak efektif untuk pengiriman data dari alat ke *cloud database* maksimal di jarak 70m.
      
-  2. **GPS Testing** 
-     Dilakukan pengukuran perbedaan jarak antara hasil dari perangkat dengan titik yang sebenarnya
+  2. **GPS Testing** <br>
+     Dilakukan pengukuran perbedaan jarak antara hasil dari perangkat dengan titik yang sebenarnya. Contoh Hasil pengukuran,
+
+     |Detection|Actual|Different Distance (m)|
+     |Latitude|Longitude|Latitude|Longitude|
