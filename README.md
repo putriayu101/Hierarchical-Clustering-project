@@ -27,4 +27,9 @@ The system will follow the workflow below.
 The design of the model to be created follows the workflow shown below. 
 <div align = "center"> <img width="456" height="121" alt="model Ahc" src="https://github.com/user-attachments/assets/a3789b31-bd7e-42b8-89ae-1a51d0e3d0d1" /> </div>
 
-### 
+### Schematic 7-in-1 Sensor with Raspberry Pi
+<img width="576" height="293" alt="image" src="https://github.com/user-attachments/assets/6f7ac39c-0c23-4eb8-b3c3-cdf7be11f2ae" />
+| Raspberry Pi | Arduino | 7in1 Sensor | 
+| :---: | :---: | :---: | :---: |
+| USB Raspberry Pi | 5V | - | Brown Cabel |
+| ---------------- | GND | - | Blcak cabel |
