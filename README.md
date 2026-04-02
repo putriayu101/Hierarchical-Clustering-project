@@ -31,7 +31,6 @@ The design of the model to be created follows the workflow shown below.
 ### Schematic 7-in-1 Sensor with Raspberry Pi
 <div align = "center"> <img width="488" height="300" alt="image" src="https://github.com/user-attachments/assets/6f7ac39c-0c23-4eb8-b3c3-cdf7be11f2ae" /> </div> <br>
 
-<div align="center"> 
 | Raspberry Pi | Arduino Nano | RS-485 | 7in1 Sensor |
 | :---: | :---: | :---: | :---: |
 | **USB Raspberry Pi** | 5V | - | Kabel Coklat |
@@ -44,7 +43,6 @@ The design of the model to be created follows the workflow shown below.
 | **USB Raspberry Pi** | D4 | RE | - |
 | **USB Raspberry Pi** | D5 | R0 | - |
 | **USB Raspberry Pi** | D2 | DI | - | 
-</div>
 
 ### Schematic GPS Sensor with Raspberry Pi
 <div align = "center">
@@ -105,7 +103,7 @@ The design of the model to be created follows the workflow shown below.
 | Ward | 0,880 |
 
   2. **Cluster Selection** <br>
-     Using the *Elbow method* as an evaluation metric to determine the optimal number of clusters. <br>
+    Using the *Elbow method* as an evaluation metric to determine the optimal number of clusters. <br>
    <div align = "center"> <img width="371" height="241" alt="image" src="https://github.com/user-attachments/assets/63924f5f-2a4b-4671-9a07-5b0b9e3f6677" /> </div> <br>
     As shown in the figure, the decrease in the *Within-Cluster Sum of Squares* (WCSS) begins to slow significantly in cluster 5. Therefore, cluster 5 is considered effective for clustering in the model.
 
