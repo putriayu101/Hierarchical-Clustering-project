@@ -108,7 +108,7 @@ Dari hasil perbandingan penggunaan linkage, linkage *Average* memberikan nilai p
     Dari gambar, penurunan *Within-Cluster Sum of Squares* (WCSS) mulai melambat secara signifikan saat berada di cluster 5. Oleh karena itu, cluster 5 di nilai efektif untuk pengelompokkan pada model. 
 
   4. Selection of Distance Matrices
-     Pemilihan matriks jarak untuk memperoleh hasil distribusi data yang optimal. Digunakan cluster 5 yang kita pilih sebelumnya untuk melihat hasil distribusi data dari setiap matriks jarak. 
+     Pemilihan matriks jarak untuk memperoleh hasil distribusi data yang optimal. Digunakan cluster 5 yang kita pilih sebelumnya untuk melihat hasil distribusi data dari setiap matriks jarak. <br>
      | Cluster | Manhattan | Eucledian | Cosine |
      | :---: | :---:|:---:|:---:|
      |1|499|1738|499|
