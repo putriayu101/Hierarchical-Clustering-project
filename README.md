@@ -93,7 +93,7 @@ The design of the model to be created follows the workflow shown below.
 
 ## System Analytics
   1. **Selection of Linkage** <br>
-      Dari hasil perbandingan penggunaan linkage, linkage *Average* memberikan nilai paling tinggi, artinya, dendogram akan di visualisasikan menggunakan *Average* linkage.
+     Based on the comparison of linkage methods, the *Average* linkage method yielded the highest score, meaning that the dendrogram will be visualized using *Average* linkage.
      
 | Linkage | Coefficient Correlation Cophenetic (CCC) |
 | :---: | :---: |
@@ -103,12 +103,12 @@ The design of the model to be created follows the workflow shown below.
 | Ward | 0,880 |
 
   2. **Cluster Selection** <br>
-     Menggunakan *Elbow method* sebagai matriks evaluasi dalam penentuan jumlah cluster yang optimal. <br>
-    <img width="371" height="241" alt="image" src="https://github.com/user-attachments/assets/63924f5f-2a4b-4671-9a07-5b0b9e3f6677" /> <br>
-    Dari gambar, penurunan *Within-Cluster Sum of Squares* (WCSS) mulai melambat secara signifikan saat berada di cluster 5. Oleh karena itu, cluster 5 di nilai efektif untuk pengelompokkan pada model. 
+     Using the *Elbow method* as an evaluation metric to determine the optimal number of clusters. <br>
+   <div align = "center"> <img width="371" height="241" alt="image" src="https://github.com/user-attachments/assets/63924f5f-2a4b-4671-9a07-5b0b9e3f6677" /> </div> <br>
+    As shown in the figure, the decrease in the *Within-Cluster Sum of Squares* (WCSS) begins to slow significantly in cluster 5. Therefore, cluster 5 is considered effective for clustering in the model.
 
   4. **Selection of Distance Matrices** <br>
-     Pemilihan matriks jarak untuk memperoleh hasil distribusi data yang optimal. Digunakan cluster 5 yang kita pilih sebelumnya untuk melihat hasil distribusi data dari setiap matriks jarak. <br>
+      Selecting a distance matrix to obtain the optimal data distribution. We use the clusters we selected earlier to examine the data distribution results for each distance matrix. <br>
      
      | Cluster | Manhattan | Eucledian | Cosine |
      | :---: | :---:|:---:|:---:|
@@ -118,11 +118,22 @@ The design of the model to be created follows the workflow shown below.
      |4|316|43|735|
      |5|801|14|267|
 
-Dari hasil dapat disimpulkan bahwa matriks *Cosine* memiliki penyebaran data yang cukup seimbang dibandingkan matriks Manhattan dan Eucledian.
+    <br> From the results, it can be concluded that the *Cosine* matrix exhibits a more balanced data distribution compared to the Manhattan and Euclidean matrices.
 
   5. **Dendogram**
      <img width="440" height="224" alt="image" src="https://github.com/user-attachments/assets/c08fa96b-2b28-443f-b284-b86f3e4fc2d4" /> <br>
-     Dendrogram pada gambar dihasilkan dari penggunaan average linkage dan cosine matriks. 
+    The dendrogram in the figure was generated using average linkage and a cosine matrix.
+
+  6. **Pengelompokkan Tanaman Hasil Clustering** <br>
+     This clustering is used to identify which plant names are included in each cluster. The clustering results are based on a cosine matrix, 5 clusters, and average linkage. <br>
+     
+     |Cluter ke-|Nama Tanaman|
+     |:---:|:---|
+     |1|Corn, Chickpeas, Black-eyed peas, Snow peas, Red beans, Lentils, Mangoes|
+     |2|Pomegranate, Orange, Green beans, Coconut, Papaya|
+     |3|Grape, Apple|
+     |4|Corn, Cotton, Coffee, Melon, Rice, Papaya, Banana, Hemp, Watermelon|
+     |5|Gude beans, Black beans, Capri beans, Lentils|
      
 ## 🛠️ Tech Stack
   - Machine Learning  : Python, Scikit-learn (AgglomerativeClustering)
@@ -132,3 +143,11 @@ Dari hasil dapat disimpulkan bahwa matriks *Cosine* memiliki penyebaran data yan
   - IoT Hardware      : 7-in-1 Soil Sensor, Neo-6M GPS, Raspberry Pi, TFT LCD
   - Connectivity      : Wi-Fi (Raspberri Pi)
 
+## Result 
+  1. **Wi-Fi Connection**
+     Digunakan internet HP dengan kekuatan sebesar 2.4 GHz untuk menghubungkan alat dengan internet.Pada pengukuran, semakin kecil nilai (negatif) misalnya mendekati -50 dBm, kekuatan sinyal semakin baik. Dan sebaliknya, apabila nilai (negatif) makin besar misal mendekati -100 dBm, artinya kekuatan sinyal semakin buruk. <br>
+     <img width="356" height="171" alt="image" src="https://github.com/user-attachments/assets/98a2fbbe-22f9-4bad-8d7b-ee116d10c83b" /> <br>
+     Dari hasil pengukuran, dapat disimpulkan bahwa kekuatan sinyal dari hospot HP memiliki jangkauan efektif sekitar 50m, dan jangkauan maksimal di 70m. Oleh karena itu, jarak efektif untuk pengiriman data dari alat ke *cloud database* maksimal di jarak 70m.
+     
+  2. **GPS Testing** 
+     Dilakukan pengukuran perbedaan jarak antara hasil dari perangkat dengan titik yang sebenarnya
