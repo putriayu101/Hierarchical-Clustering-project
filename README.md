@@ -56,8 +56,8 @@ The design of the model to be created follows the workflow shown below.
 | **USB Raspberry Pi** | TX | RX | 
 
 ### Schematic TFT LCD Sensor with Raspberry Pi
-<div align = "center"><img width="488" height="195" alt="image" src="https://github.com/user-attachments/assets/a82deba0-b456-40a1-827f-945e885f1fca" />
-</div> <br>
+<div align = "center"><img width="488" height="195" alt="image" src="https://github.com/user-attachments/assets/a82deba0-b456-40a1-827f-945e885f1fca" /> </div> <br>
+
 | Raspberry Pi | USB to TTL |
 | :---: | :---: | 
 | VCC | 3.3V | 
