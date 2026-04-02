@@ -93,14 +93,14 @@ The design of the model to be created follows the workflow shown below.
 
 ## System Analytics
   1. **Selection of Linkage** <br>
+      Dari hasil perbandingan penggunaan linkage, linkage *Average* memberikan nilai paling tinggi, artinya, dendogram akan di visualisasikan menggunakan *Average* linkage.
+     
 | Linkage | Coefficient Correlation Cophenetic (CCC) |
 | :---: | :---: |
 | Single | 0,888 |
 | Complete | 0,895 |
 | Average | 0,945 |
 | Ward | 0,880 |
-
-Dari hasil perbandingan penggunaan linkage, linkage *Average* memberikan nilai paling tinggi, artinya, dendogram akan di visualisasikan menggunakan *Average* linkage.
 
   2. **Cluster Selection** <br>
      Menggunakan *Elbow method* sebagai matriks evaluasi dalam penentuan jumlah cluster yang optimal. <br>
